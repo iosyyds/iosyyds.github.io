@@ -6,7 +6,7 @@ icon: fa-solid fa-galaxy fa-spin fa-spin-reverse
 title: 主页
 heroImage: /home.png
 # heroImage: /logo.svg
-heroText: AnWen's Docs
+heroText: Tian's Docs
 tagline: <i class="fa-duotone fa-house-heart" style="--fa-primary-color:#155cd5; --fa-secondary-color:#ff0000; --fa-secondary-opacity:0.5;"></i> 甜甜个人分享的自留地。
 bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
