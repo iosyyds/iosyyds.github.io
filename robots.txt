@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://anwen-anyi/anwen-anyi.github.io/sitemap.xml
+Sitemap: https://iosyyds/iosyyds.github.io/sitemap.xml
