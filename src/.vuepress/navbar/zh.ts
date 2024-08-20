@@ -25,7 +25,7 @@ export const zhNavbar = navbar([
       { 
         text: "YouTube", 
         icon:"fa-brands fa-youtube",
-        link: "https://www.youtube.com/" 
+        link: "https://www.youtube.com" 
       },
     ],
   },

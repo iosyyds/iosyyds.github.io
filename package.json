@@ -1,7 +1,7 @@
 {
-  "name": "anwen-docs",
+  "name": "Tian-docs",
   "version": "2.0.0",
-  "description": "AnWen Docs",
+  "description": "Tian Docs",
   "license": "MIT",
   "type": "module",
   "scripts": {
