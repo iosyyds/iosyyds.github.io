@@ -48,8 +48,8 @@ export default defineUserConfig({
       "script",
       {
         defer: true,
-        "data-domain": "anwen-anyi.github.io",
-        src: "https://site.izyt.cc/js/script.js"
+        "data-domain": "iosyyds.github.io",
+        src: "https://plausible.io/js/script.js"
       }
     ],
     [

@@ -7,7 +7,7 @@ import { zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   // 爬虫xml
-  hostname: "https://anwen-anyi/anwen-anyi.github.io",
+  hostname: "https://iosyyds/iosyyds.github.io",
 
   author: {
     name: "甜甜",
