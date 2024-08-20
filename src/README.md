@@ -4,11 +4,9 @@ containerClass: home
 home: true
 icon: fa-solid fa-galaxy fa-spin fa-spin-reverse
 title: 主页
-heroImage: /home.png
-# heroImage: /logo.svg
 hero:
-  name: "Neat科技"
-  text: "ITooNeat Site"
+  name: "Tian’Blog"
+  text: "Tian 博客"
   tagline: My great project tagline
   image:
     src: https://warm-dieffenbachia-f521a5.netlify.app/img/2024/1712785898454.png
