@@ -117,9 +117,9 @@
           <span class="tool-cat">${tool.category}</span>
         </div>
       </div>
-      <div class="ad-slot"><!-- AdSense --></div>
+      <div class="ad-slot"><div class="ad-placeholder"><span class="ad-label">📢 广告</span><span class="ad-text">支持我们持续提供免费工具</span></div></div>
       <div class="tool-detail-body">${tool.html}</div>
-      <div class="ad-slot"><!-- AdSense --></div>
+      <div class="ad-slot"><div class="ad-placeholder"><span class="ad-label">📢 广告</span><span class="ad-text">您的支持是我们更新的动力</span></div></div>
       <div class="tool-guide">
         <h3>使用说明</h3>
         <p>本工具在浏览器本地运行，您的数据不会上传到任何服务器，安全可靠。</p>
@@ -240,7 +240,7 @@
   // 处理hash路由
   function handleHash() {
     const hash = location.hash.replace('#', '') || 'home';
-    if (['home', 'tools', 'about'].includes(hash)) {
+    if (['home', 'tools', 'about', 'privacy', 'terms'].includes(hash)) {
       switchPage(hash);
     } else {
       switchPage('home');
