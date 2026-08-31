@@ -111,6 +111,18 @@ body {
 .tool-guide p { font-size: 14px; color: var(--text-secondary); margin-bottom: 12px; }
 .tool-guide ul { margin-left: 20px; color: var(--text-secondary); font-size: 14px; }
 .tool-guide li { margin-bottom: 6px; line-height: 1.6; }
+/* 收藏按钮 */
+.favorite-btn { background: none; border: 1px solid var(--border); color: var(--text-muted); width: 40px; height: 40px; border-radius: 10px; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; transition: all 0.2s; flex-shrink: 0; }
+.favorite-btn:hover { border-color: var(--accent); color: var(--accent); transform: scale(1.1); }
+.favorite-btn.favorited { color: #f59e0b; border-color: #f59e0b; background: rgba(245,158,11,0.1); }
+/* 相关工具 */
+.related-tools { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); }
+.related-tools h3 { font-size: 18px; font-weight: 600; margin-bottom: 16px; color: var(--text); }
+.related-tools-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
+.related-tool-card { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 14px; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 10px; }
+.related-tool-card:hover { border-color: var(--accent); background: var(--accent-light); }
+.related-tool-icon { font-size: 24px; flex-shrink: 0; }
+.related-tool-name { font-size: 13px; font-weight: 500; color: var(--text); line-height: 1.3; }
 /* 博客/教程样式 */
 .blog-layout { display: grid; grid-template-columns: 1fr 280px; gap: 24px; align-items: start; }
 .blog-list { display: flex; flex-direction: column; gap: 16px; }
@@ -175,6 +187,20 @@ body {
 .faq-contact { margin-top: 32px; background: var(--accent-light); border-radius: 12px; padding: 24px; max-width: 900px; }
 .faq-contact h3 { font-size: 18px; font-weight: 600; margin-bottom: 8px; color: var(--text); }
 .faq-contact p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+/* 联系页面 */
+.contact-layout { display: grid; grid-template-columns: 1.5fr 1fr; gap: 24px; align-items: start; }
+.contact-form-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 28px; }
+.contact-info-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 28px; position: sticky; top: 84px; }
+.contact-info-item { display: flex; gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--border); }
+.contact-info-item:last-of-type { border-bottom: none; }
+.contact-info-icon { font-size: 28px; flex-shrink: 0; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: var(--accent-light); border-radius: 10px; }
+.contact-info-title { font-size: 15px; font-weight: 600; margin-bottom: 4px; color: var(--text); }
+.contact-info-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+.contact-tips { margin-top: 20px; padding: 16px; background: var(--bg); border-radius: 8px; }
+.contact-result { padding: 12px 16px; border-radius: 8px; font-size: 14px; display: none; }
+.contact-result.success { display: block; background: rgba(16,185,129,0.1); color: var(--success); border: 1px solid rgba(16,185,129,0.3); }
+.contact-result.error { display: block; background: rgba(239,68,68,0.1); color: var(--danger); border: 1px solid rgba(239,68,68,0.3); }
+/* 表单通用样式 */
 .form-group { margin-bottom: 16px; }
 .form-group label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 6px; color: var(--text-secondary); }
 .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; background: var(--bg); color: var(--text); outline: none; transition: border-color 0.2s; }
@@ -214,6 +240,8 @@ body {
 @media (max-width: 968px) {
   .blog-layout { grid-template-columns: 1fr; }
   .blog-sidebar { position: static; }
+  .contact-layout { grid-template-columns: 1fr; }
+  .contact-info-card { position: static; }
 }
 @media (max-width: 768px) {
   .hero-title { font-size: 32px; }
@@ -233,4 +261,6 @@ body {
   .blog-article-title { font-size: 22px; }
   .faq-answer { padding-left: 20px; }
   .hot-tools-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .related-tools-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+  .contact-form-card, .contact-info-card { padding: 20px; }
 }
