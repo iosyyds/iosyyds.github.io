@@ -8,6 +8,43 @@
 <meta name="keywords" content="在线工具,实用工具箱,免费工具,文本工具,计算器,单位转换,BMI计算,Base64,JSON格式化,使用教程,常见问题">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
 <link rel="stylesheet" href="style.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="实用工具箱 - 100+免费在线工具大全与使用教程">
+<meta property="og:description" content="汇聚100+实用在线工具，涵盖文本处理、计算转换、开发辅助、颜色图片、生活日常等九大分类，附详细使用教程和常见问题解答。全部免费使用，数据本地处理安全可靠。">
+<meta property="og:url" content="https://iosyyds.github.io">
+<meta property="og:site_name" content="实用工具箱">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="实用工具箱 - 100+免费在线工具大全">
+<meta name="twitter:description" content="汇聚100+实用在线工具，全部免费使用，数据本地处理安全可靠。">
+<meta name="robots" content="index, follow">
+<meta name="author" content="实用工具箱">
+<meta name="application-name" content="实用工具箱">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "实用工具箱",
+  "url": "https://iosyyds.github.io",
+  "description": "汇聚100+实用在线工具，涵盖文本处理、计算转换、开发辅助、颜色图片、生活日常等九大分类，附详细使用教程和常见问题解答。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://iosyyds.github.io/#tools?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "实用工具箱的所有工具都是免费的吗？", "acceptedAnswer": {"@type": "Answer", "text": "是的，实用工具箱的所有100+工具完全免费使用，没有任何隐藏收费，没有使用次数限制，也不需要注册登录。"}},
+    {"@type": "Question", "name": "我在工具中输入的数据安全吗？", "acceptedAnswer": {"@type": "Answer", "text": "非常安全。所有工具均在浏览器本地运行，您输入的任何数据都不会上传到任何服务器，处理结果直接在本地生成。"}},
+    {"@type": "Question", "name": "网站支持哪些设备和浏览器？", "acceptedAnswer": {"@type": "Answer", "text": "实用工具箱采用响应式设计，支持桌面电脑、笔记本、平板电脑和手机等各种设备，推荐使用Chrome、Firefox、Edge、Safari等现代浏览器。"}},
+    {"@type": "Question", "name": "如何反馈问题或建议新工具？", "acceptedAnswer": {"@type": "Answer", "text": "您可以通过网站的联系我们页面提交反馈，或在GitHub仓库提交Issue。我们会认真对待每一条用户反馈。"}}
+  ]
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7156604582462189" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -20,12 +57,12 @@
 <a href="#blog" class="nav-link" data-nav="blog">教程</a>
 <a href="#faq" class="nav-link" data-nav="faq">FAQ</a>
 <a href="#about" class="nav-link" data-nav="about">关于</a>
+<a href="#contact" class="nav-link" data-nav="contact">联系我们</a>
 </nav>
 <button class="theme-toggle" id="themeToggle">🌙</button>
 </div>
 </header>
 <main class="main">
-<!-- 首页 -->
 <section id="home" class="page active">
 <div class="container">
 <div class="hero">
@@ -39,13 +76,21 @@
 <div class="hero-stats">
 <div class="stat-item"><div class="stat-number">100+</div><div class="stat-label">实用工具</div></div>
 <div class="stat-item"><div class="stat-number">9</div><div class="stat-label">工具分类</div></div>
-<div class="stat-item"><div class="stat-number">10+</div><div class="stat-label">使用教程</div></div>
+<div class="stat-item"><div class="stat-number">15</div><div class="stat-label">使用教程</div></div>
 <div class="stat-item"><div class="stat-number">0</div><div class="stat-label">数据上传</div></div>
 </div>
 </div>
 <div class="ad-slot"><div class="ad-placeholder"><span class="ad-label">📢 广告</span><span class="ad-text">支持我们持续提供免费工具</span></div></div>
 <h2 class="section-title">🔥 热门工具</h2>
 <div class="hot-tools-grid" id="hotToolsGrid"></div>
+<div id="favoriteSection" style="display:none;">
+<h2 class="section-title">⭐ 我的收藏</h2>
+<div class="hot-tools-grid" id="favoriteToolsGrid"></div>
+</div>
+<div id="recentSection" style="display:none;">
+<h2 class="section-title">🕐 最近使用</h2>
+<div class="hot-tools-grid" id="recentToolsGrid"></div>
+</div>
 <h2 class="section-title">工具分类</h2>
 <div class="category-grid" id="categoryGrid"></div>
 <div class="ad-slot"><div class="ad-placeholder"><span class="ad-label">📢 广告</span><span class="ad-text">您的支持是我们更新的动力</span></div></div>
@@ -70,7 +115,6 @@
 </div>
 </div>
 </section>
-<!-- 全部工具 -->
 <section id="tools" class="page">
 <div class="container">
 <h2 class="section-title">全部工具</h2>
@@ -86,7 +130,6 @@
 </div>
 </div>
 </section>
-<!-- 教程 -->
 <section id="blog" class="page">
 <div class="container">
 <h2 class="section-title">📖 使用教程与指南</h2>
@@ -107,7 +150,6 @@
 <div id="blogDetail" class="blog-detail" style="display:none;"></div>
 </div>
 </section>
-<!-- FAQ -->
 <section id="faq" class="page">
 <div class="container">
 <h2 class="section-title">❓ 常见问题</h2>
@@ -120,7 +162,6 @@
 </div>
 </div>
 </section>
-<!-- 关于 -->
 <section id="about" class="page">
 <div class="container">
 <h2 class="section-title">关于我们</h2>
@@ -166,7 +207,6 @@
 </div>
 </div>
 </section>
-<!-- 隐私政策 -->
 <section id="privacy" class="page">
 <div class="container">
 <h2 class="section-title">隐私政策</h2>
@@ -215,7 +255,6 @@
 </div>
 </div>
 </section>
-<!-- 使用条款 -->
 <section id="terms" class="page">
 <div class="container">
 <h2 class="section-title">使用条款</h2>
@@ -257,6 +296,85 @@
 </div>
 </div>
 </section>
+<section id="contact" class="page">
+<div class="container">
+<h2 class="section-title">📮 联系我们</h2>
+<p style="color:var(--text-secondary);margin-bottom:24px;max-width:800px;">感谢您使用实用工具箱！如果您有任何问题、建议、合作意向，或发现了工具的Bug，欢迎通过以下表单与我们联系。我们会认真阅读每一条反馈，并在后续版本中持续改进。</p>
+<div class="contact-layout">
+<div class="contact-form-card">
+<h3 style="font-size:18px;font-weight:600;margin-bottom:16px;">发送消息</h3>
+<form id="contactForm">
+<div class="form-row">
+<div class="form-group">
+<label for="contactName">您的称呼 *</label>
+<input type="text" id="contactName" placeholder="请输入您的称呼" required>
+</div>
+<div class="form-group">
+<label for="contactEmail">邮箱地址 *</label>
+<input type="email" id="contactEmail" placeholder="请输入您的邮箱，方便我们回复" required>
+</div>
+</div>
+<div class="form-group">
+<label for="contactType">反馈类型</label>
+<select id="contactType">
+<option value="bug">问题反馈 / Bug报告</option>
+<option value="suggestion">功能建议 / 新工具需求</option>
+<option value="question">使用咨询 / 问题解答</option>
+<option value="cooperation">商务合作</option>
+<option value="other">其他</option>
+</select>
+</div>
+<div class="form-group">
+<label for="contactMessage">留言内容 *</label>
+<textarea id="contactMessage" rows="6" placeholder="请详细描述您的问题或建议。如果是Bug报告，请提供复现步骤、使用的浏览器和设备信息，以便我们更快定位和修复问题。" required></textarea>
+</div>
+<button type="submit" class="btn btn-primary" style="width:100%;padding:12px;">提交反馈</button>
+<div id="contactResult" style="margin-top:16px;"></div>
+</form>
+</div>
+<div class="contact-info-card">
+<h3 style="font-size:18px;font-weight:600;margin-bottom:16px;">其他联系方式</h3>
+<div class="contact-info-item">
+<div class="contact-info-icon">🐙</div>
+<div>
+<div class="contact-info-title">GitHub</div>
+<div class="contact-info-desc">欢迎在GitHub仓库提交Issue或PR，这是最快的反馈方式。</div>
+</div>
+</div>
+<div class="contact-info-item">
+<div class="contact-info-icon">📚</div>
+<div>
+<div class="contact-info-title">使用教程</div>
+<div class="contact-info-desc">在使用工具前，建议先阅读我们的使用教程，了解工具的功能和使用方法。</div>
+</div>
+</div>
+<div class="contact-info-item">
+<div class="contact-info-icon">❓</div>
+<div>
+<div class="contact-info-title">常见问题</div>
+<div class="contact-info-desc">很多常见问题在FAQ页面都有解答，建议先查看FAQ，可能已经有您需要的答案。</div>
+</div>
+</div>
+<div class="contact-info-item">
+<div class="contact-info-icon">⏱️</div>
+<div>
+<div class="contact-info-title">回复时间</div>
+<div class="contact-info-desc">我们会在收到反馈后的3-5个工作日内回复。对于紧急问题，建议通过GitHub提交Issue。</div>
+</div>
+</div>
+<div class="contact-tips">
+<h4 style="font-size:15px;font-weight:600;margin-bottom:8px;">反馈建议</h4>
+<ul style="margin-left:18px;font-size:13px;color:var(--text-secondary);line-height:1.8;">
+<li>Bug报告请提供复现步骤和浏览器信息</li>
+<li>新工具建议请描述功能和使用场景</li>
+<li>计算结果不准确请提供输入和期望输出</li>
+<li>不要在留言中包含敏感个人信息</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
 </main>
 <footer class="footer">
 <div class="container">
@@ -275,7 +393,7 @@
 </div>
 <div>
 <h4>关于</h4>
-<ul><li><a href="#about">关于我们</a></li><li><a href="#faq">常见问题</a></li><li><a href="#privacy">隐私政策</a></li><li><a href="#terms">使用条款</a></li></ul>
+<ul><li><a href="#about">关于我们</a></li><li><a href="#faq">常见问题</a></li><li><a href="#contact">联系我们</a></li><li><a href="#privacy">隐私政策</a></li><li><a href="#terms">使用条款</a></li></ul>
 </div>
 </div>
 <div class="footer-bottom">© 2026 实用工具箱 ToolBox. All rights reserved. | 100+ 免费在线工具 | 数据本地处理，安全可靠</div>
