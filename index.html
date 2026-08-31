@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>实用工具箱 - 100+免费在线工具大全</title>
-<meta name="description" content="汇聚100+实用在线工具，涵盖文本处理、计算转换、开发辅助、颜色图片、生活日常等领域，全部免费使用，数据本地处理安全可靠。">
-<meta name="keywords" content="在线工具,实用工具箱,免费工具,文本工具,计算器,单位转换,BMI计算,Base64,JSON格式化">
+<title>实用工具箱 - 100+免费在线工具大全与使用教程</title>
+<meta name="description" content="汇聚100+实用在线工具，涵盖文本处理、计算转换、开发辅助、颜色图片、生活日常等九大分类，附详细使用教程和常见问题解答。全部免费使用，数据本地处理安全可靠。">
+<meta name="keywords" content="在线工具,实用工具箱,免费工具,文本工具,计算器,单位转换,BMI计算,Base64,JSON格式化,使用教程,常见问题">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
 <link rel="stylesheet" href="style.css">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7156604582462189" crossorigin="anonymous"></script>
@@ -17,6 +17,8 @@
 <nav class="nav">
 <a href="#home" class="nav-link active" data-nav="home">首页</a>
 <a href="#tools" class="nav-link" data-nav="tools">全部工具</a>
+<a href="#blog" class="nav-link" data-nav="blog">教程</a>
+<a href="#faq" class="nav-link" data-nav="faq">FAQ</a>
 <a href="#about" class="nav-link" data-nav="about">关于</a>
 </nav>
 <button class="theme-toggle" id="themeToggle">🌙</button>
@@ -28,7 +30,7 @@
 <div class="container">
 <div class="hero">
 <h1 class="hero-title">100+ 实用在线工具</h1>
-<p class="hero-subtitle">文本处理 · 计算转换 · 开发辅助 · 生活日常 — 全部免费，即开即用</p>
+<p class="hero-subtitle">文本处理 · 计算转换 · 开发辅助 · 生活日常 — 全部免费，即开即用，附详细使用教程</p>
 <div class="search-box">
 <input type="text" id="searchInput" placeholder="搜索工具，如：字数统计、BMI计算、Base64..." class="search-input">
 <button class="search-btn">🔍</button>
@@ -37,24 +39,35 @@
 <div class="hero-stats">
 <div class="stat-item"><div class="stat-number">100+</div><div class="stat-label">实用工具</div></div>
 <div class="stat-item"><div class="stat-number">9</div><div class="stat-label">工具分类</div></div>
-<div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">免费使用</div></div>
+<div class="stat-item"><div class="stat-number">10+</div><div class="stat-label">使用教程</div></div>
 <div class="stat-item"><div class="stat-number">0</div><div class="stat-label">数据上传</div></div>
 </div>
 </div>
 <div class="ad-slot"><div class="ad-placeholder"><span class="ad-label">📢 广告</span><span class="ad-text">支持我们持续提供免费工具</span></div></div>
+<h2 class="section-title">🔥 热门工具</h2>
+<div class="hot-tools-grid" id="hotToolsGrid"></div>
 <h2 class="section-title">工具分类</h2>
 <div class="category-grid" id="categoryGrid"></div>
 <div class="ad-slot"><div class="ad-placeholder"><span class="ad-label">📢 广告</span><span class="ad-text">您的支持是我们更新的动力</span></div></div>
 <h2 class="section-title">为什么选择我们</h2>
 <div class="features-grid">
-<div class="feature-card"><div class="feature-icon">⚡</div><h3>即开即用</h3><p>无需下载安装，打开浏览器即可使用所有工具，节省您的时间和存储空间。</p></div>
-<div class="feature-card"><div class="feature-icon">🔒</div><h3>隐私安全</h3><p>所有工具均在浏览器本地运行，您的数据不会上传到任何服务器，保护隐私安全。</p></div>
-<div class="feature-card"><div class="feature-icon">💰</div><h3>完全免费</h3><p>所有工具完全免费使用，无需注册登录，没有隐藏收费，畅享全部功能。</p></div>
-<div class="feature-card"><div class="feature-icon">📱</div><h3>响应式设计</h3><p>采用响应式设计，在电脑、平板、手机等各种设备上都能获得良好的使用体验。</p></div>
-<div class="feature-card"><div class="feature-icon">🌙</div><h3>深色模式</h3><p>支持深色/浅色主题切换，保护您的眼睛，适合长时间使用。</p></div>
-<div class="feature-card"><div class="feature-icon">🚀</div><h3>持续更新</h3><p>工具持续更新和优化，不断增加新的实用工具，满足您的各种需求。</p></div>
+<div class="feature-card"><div class="feature-icon">⚡</div><h3>即开即用</h3><p>无需下载安装，打开浏览器即可使用所有工具，节省您的时间和存储空间。无论是在办公室、家里还是旅途中，只要有网络就能随时使用。</p></div>
+<div class="feature-card"><div class="feature-icon">🔒</div><h3>隐私安全</h3><p>所有工具均在浏览器本地运行，您输入的数据不会上传到任何服务器。文本内容、计算数据、个人信息全部保留在您的设备上，从根本上保护隐私安全。</p></div>
+<div class="feature-card"><div class="feature-icon">💰</div><h3>完全免费</h3><p>所有工具完全免费使用，无需注册登录，没有隐藏收费，没有使用次数限制。我们通过展示非侵入式广告维持运营，不向用户收取任何费用。</p></div>
+<div class="feature-card"><div class="feature-icon">📱</div><h3>响应式设计</h3><p>采用响应式设计，在电脑、平板、手机等各种设备上都能获得良好的使用体验。界面自动适配屏幕尺寸，触控操作友好，随时随地高效办公。</p></div>
+<div class="feature-card"><div class="feature-icon">🌙</div><h3>深色模式</h3><p>支持深色/浅色主题一键切换，保护您的眼睛，适合长时间使用。主题偏好自动保存，下次访问自动应用您选择的主题模式。</p></div>
+<div class="feature-card"><div class="feature-icon">📚</div><h3>详细教程</h3><p>每个工具分类都配有详细的使用教程和应用场景指南，帮助您快速上手并充分利用工具功能。还有常见问题解答，解决您使用中的各种疑问。</p></div>
 </div>
 <div class="ad-slot"><div class="ad-placeholder"><span class="ad-label">📢 广告</span><span class="ad-text">感谢您的理解与支持</span></div></div>
+<h2 class="section-title">📖 最新教程</h2>
+<div class="blog-grid" id="latestBlogGrid"></div>
+<h2 class="section-title">使用场景</h2>
+<div class="features-grid">
+<div class="feature-card"><div class="feature-icon">💼</div><h3>办公效率</h3><p>文字工作者可以使用字数统计、大小写转换、文本对比等工具提升文档处理效率；数据处理人员可以使用各种转换工具快速完成格式转换。</p></div>
+<div class="feature-card"><div class="feature-icon">👨‍💻</div><h3>开发调试</h3><p>程序员可以使用JSON格式化、Base64编解码、UUID生成、正则表达式测试等工具进行日常开发调试，无需在本地安装各种小工具。</p></div>
+<div class="feature-card"><div class="feature-icon">🎨</div><h3>设计创作</h3><p>设计师可以使用颜色转换、配色方案生成、对比度检查等工具辅助设计工作，确保颜色搭配符合无障碍标准，提升设计质量。</p></div>
+<div class="feature-card"><div class="feature-icon">🏠</div><h3>日常生活</h3><p>普通用户可以使用BMI计算器、贷款计算器、油费计算、旅行预算等生活工具，轻松应对日常生活中的各种计算需求。</p></div>
+</div>
 </div>
 </section>
 <!-- 全部工具 -->
@@ -73,22 +86,83 @@
 </div>
 </div>
 </section>
+<!-- 教程 -->
+<section id="blog" class="page">
+<div class="container">
+<h2 class="section-title">📖 使用教程与指南</h2>
+<p style="color:var(--text-secondary);margin-bottom:24px;max-width:800px;">我们为每个工具分类准备了详细的使用教程，帮助您了解工具的功能、应用场景和使用技巧。点击文章标题查看完整内容。</p>
+<div class="blog-layout">
+<div class="blog-list" id="blogList"></div>
+<aside class="blog-sidebar">
+<div class="sidebar-card">
+<div class="sidebar-title">热门教程</div>
+<div id="hotBlogList" class="hot-blog-list"></div>
+</div>
+<div class="sidebar-card">
+<div class="sidebar-title">工具分类</div>
+<div id="blogCategoryList" class="blog-category-list"></div>
+</div>
+</aside>
+</div>
+<div id="blogDetail" class="blog-detail" style="display:none;"></div>
+</div>
+</section>
+<!-- FAQ -->
+<section id="faq" class="page">
+<div class="container">
+<h2 class="section-title">❓ 常见问题</h2>
+<p style="color:var(--text-secondary);margin-bottom:24px;max-width:800px;">以下是用户最常问到的问题和解答。如果您的问题不在列表中，欢迎通过网站反馈渠道与我们联系。</p>
+<div class="ad-slot"><div class="ad-placeholder"><span class="ad-label">📢 广告</span><span class="ad-text">支持我们持续提供免费工具</span></div></div>
+<div class="faq-list" id="faqList"></div>
+<div class="faq-contact">
+<h3>没有找到答案？</h3>
+<p>如果您有其他问题或建议，欢迎随时与我们联系。我们会认真对待每一条用户反馈，并在后续更新中不断改进。</p>
+</div>
+</div>
+</section>
 <!-- 关于 -->
 <section id="about" class="page">
 <div class="container">
 <h2 class="section-title">关于我们</h2>
 <div class="about-content">
-<p>实用工具箱致力于为全球用户提供最实用、最便捷的在线工具服务。我们相信，好的工具应该是简单易用、触手可及的。</p>
+<p>实用工具箱（ToolBox）致力于为全球用户提供最实用、最便捷的在线工具服务。我们相信，好的工具应该是简单易用、触手可及的，不应该需要下载安装、注册登录或支付费用才能使用。</p>
+<p>我们的网站汇聚了超过100种实用在线工具，覆盖日常工作、学习、开发和生活中的各种需求。所有工具均在浏览器端运行，您的数据不会上传到任何服务器，确保隐私安全。</p>
 <h3>我们的工具</h3>
-<p>目前提供超过100种实用在线工具，涵盖九大分类：文本工具、计算工具、转换工具、开发工具、颜色工具、图片工具、生活工具、时间工具、安全工具。</p>
+<p>目前提供超过100种实用在线工具，涵盖九大分类：</p>
+<ul>
+<li><strong>文本工具</strong>（20个）：字数统计、大小写转换、Base64编解码、文本对比、去重、排序等，满足文字工作者的日常需求。</li>
+<li><strong>计算工具</strong>（15个）：科学计算器、BMI计算器、贷款计算器、汇率换算、百分比计算等，覆盖生活和工作中的各种计算场景。</li>
+<li><strong>转换工具</strong>（15个）：温度转换、进制转换、单位换算、时间戳转换等，快速完成各种单位和格式的转换。</li>
+<li><strong>开发工具</strong>（15个）：UUID生成、密码生成、正则测试、JWT解码、JSON格式化等，是程序员日常开发调试的好帮手。</li>
+<li><strong>颜色工具</strong>（5个）：颜色转换、配色方案、对比度检查等，辅助设计师和前端开发者进行颜色相关工作。</li>
+<li><strong>图片工具</strong>（5个）：图片压缩、格式转换、尺寸调整等，简单的图片处理无需打开专业软件。</li>
+<li><strong>生活工具</strong>（15个）：油费计算、旅行预算、饮水量计算、卡路里计算等，让日常生活更有条理。</li>
+<li><strong>时间工具</strong>（8个）：时间戳转换、日期差计算、世界时钟、倒计时等，轻松管理时间。</li>
+<li><strong>安全工具</strong>（7个）：密码强度检测、哈希计算、凯撒密码等，关注信息安全。</li>
+</ul>
 <h3>我们的承诺</h3>
 <ul>
-<li><strong>免费使用</strong>：所有工具完全免费，没有任何隐藏收费。</li>
+<li><strong>免费使用</strong>：所有工具完全免费，没有任何隐藏收费，没有使用次数限制。</li>
 <li><strong>隐私保护</strong>：所有工具均在浏览器本地运行，您的数据不会上传到我们的服务器。</li>
 <li><strong>持续优化</strong>：我们会持续优化现有工具，并根据用户反馈增加新的实用工具。</li>
+<li><strong>详细教程</strong>：为每个工具分类提供详细的使用教程和应用场景指南，帮助您充分利用工具功能。</li>
+</ul>
+<h3>技术架构</h3>
+<p>实用工具箱采用纯前端技术构建，使用 HTML、CSS 和 JavaScript 开发，无后端服务器依赖。这种架构的优势在于：</p>
+<ul>
+<li><strong>极速响应</strong>：所有计算在本地完成，无需网络请求等待。</li>
+<li><strong>隐私安全</strong>：数据不离开用户设备，从根本上杜绝数据泄露风险。</li>
+<li><strong>高可用性</strong>：静态文件托管，几乎不会出现服务宕机情况。</li>
+<li><strong>低成本运营</strong>：通过展示非侵入式广告维持运营，不向用户收费。</li>
 </ul>
 <h3>联系我们</h3>
-<p>如有任何问题或建议，欢迎通过网站反馈与我们联系。我们会认真对待每一条用户反馈，不断改进和完善我们的服务。</p>
+<p>如有任何问题、建议或合作意向，欢迎通过以下方式与我们联系：</p>
+<ul>
+<li>在网站使用过程中遇到问题，请详细描述问题场景和复现步骤。</li>
+<li>希望增加新工具，请描述工具的功能和使用场景。</li>
+<li>发现工具计算结果不准确，请提供具体的输入和期望输出。</li>
+</ul>
+<p>我们会认真对待每一条用户反馈，不断改进和完善我们的服务。感谢您使用实用工具箱！</p>
 </div>
 </div>
 </section>
@@ -97,37 +171,47 @@
 <div class="container">
 <h2 class="section-title">隐私政策</h2>
 <div class="about-content">
-<p>最后更新日期：2026年8月27日</p>
-<p>实用工具箱（以下简称"我们"）非常重视用户的隐私保护。本隐私政策将帮助您了解我们如何收集、使用和保护您的个人信息。</p>
+<p>最后更新日期：2026年8月31日</p>
+<p>实用工具箱（以下简称"我们"）非常重视用户的隐私保护。本隐私政策将帮助您了解我们如何收集、使用和保护您的个人信息。我们承诺遵守相关法律法规，采取合理的技术措施保护您的信息安全。</p>
 <h3>一、信息收集</h3>
 <p>我们的工具大多在您的浏览器本地运行，<strong>不会将您输入的数据上传到我们的服务器</strong>。具体来说：</p>
 <ul>
 <li>文本处理、计算转换、编码解码等工具：所有数据均在您的浏览器中处理，不会上传。</li>
 <li>浏览器可能会缓存部分页面资源以提升访问速度，这些数据仅存储在您的本地设备上。</li>
 <li>我们使用 Google AdSense 广告服务，Google 可能会使用 Cookie 来投放与您相关的广告。</li>
+<li>我们可能会收集匿名的网站访问统计数据，如页面浏览量、访问来源等，这些数据不包含个人身份信息。</li>
 </ul>
 <h3>二、Cookie 使用</h3>
 <p>我们使用 Cookie 来改善您的浏览体验，包括：</p>
 <ul>
-<li>记住您的主题偏好（深色/浅色模式）。</li>
+<li>记住您的主题偏好（深色/浅色模式），下次访问时自动应用。</li>
 <li>Google AdSense 广告服务使用的 Cookie，用于展示个性化广告。</li>
-<li>您可以通过浏览器设置禁用 Cookie，但这可能会影响部分功能的使用。</li>
+<li>您可以通过浏览器设置禁用 Cookie，但这可能会影响部分功能的使用（如主题偏好保存）。</li>
 </ul>
 <h3>三、第三方服务</h3>
 <p>我们的网站使用以下第三方服务：</p>
 <ul>
-<li><strong>Google AdSense</strong>：用于展示广告。Google 可能会根据您的浏览历史展示相关广告。</li>
-<li><strong>Google Analytics</strong>（如启用）：用于统计网站访问数据，帮助我们改进服务。</li>
+<li><strong>Google AdSense</strong>：用于展示广告。Google 可能会根据您的浏览历史展示相关广告。Google 的广告 Cookie 使广告商能够根据用户对网站的访问来投放广告。</li>
+<li><strong>GitHub Pages</strong>：网站托管服务。GitHub 可能会收集访问日志用于服务运维。</li>
 </ul>
-<p>这些第三方服务有其独立的隐私政策，我们建议您查阅相关政策以了解其数据处理方式。</p>
+<p>这些第三方服务有其独立的隐私政策，我们建议您查阅相关政策以了解其数据处理方式。我们不对第三方服务的数据处理行为承担责任。</p>
 <h3>四、数据安全</h3>
-<p>我们采取合理的技术措施来保护您的信息安全。由于我们的工具大多在本地运行，您的数据从根本上不会离开您的设备，这是我们对隐私保护的核心承诺。</p>
+<p>我们采取合理的技术措施来保护您的信息安全。由于我们的工具大多在本地运行，您的数据从根本上不会离开您的设备，这是我们对隐私保护的核心承诺。我们使用 HTTPS 加密传输网站资源，确保数据传输过程的安全性。</p>
 <h3>五、儿童隐私</h3>
 <p>我们的服务面向所有年龄段的用户。我们不会主动收集13岁以下儿童的个人信息。如果您认为我们可能收集了儿童的信息，请联系我们以便及时删除。</p>
-<h3>六、政策更新</h3>
-<p>我们可能会不时更新本隐私政策。更新后的政策将在本页面发布，重大变更时我们会在网站显著位置通知。</p>
-<h3>七、联系我们</h3>
-<p>如果您对本隐私政策有任何疑问或建议，请通过网站反馈渠道与我们联系。</p>
+<h3>六、用户权利</h3>
+<p>根据适用的数据保护法律，您可能享有以下权利：</p>
+<ul>
+<li>访问我们持有的关于您的个人信息。</li>
+<li>要求更正不准确的个人信息。</li>
+<li>要求删除您的个人信息。</li>
+<li>反对或限制我们对您个人信息的处理。</li>
+<li>数据可携带性（在适用情况下）。</li>
+</ul>
+<h3>七、政策更新</h3>
+<p>我们可能会不时更新本隐私政策。更新后的政策将在本页面发布，重大变更时我们会在网站显著位置通知。继续使用本网站即表示您接受更新后的隐私政策。</p>
+<h3>八、联系我们</h3>
+<p>如果您对本隐私政策有任何疑问或建议，或需要行使您的数据权利，请通过网站反馈渠道与我们联系。我们会在合理时间内回复您的请求。</p>
 </div>
 </div>
 </section>
@@ -136,10 +220,10 @@
 <div class="container">
 <h2 class="section-title">使用条款</h2>
 <div class="about-content">
-<p>最后更新日期：2026年8月27日</p>
-<p>欢迎使用实用工具箱！在使用我们的服务之前，请仔细阅读以下使用条款。使用本网站即表示您同意遵守这些条款。</p>
+<p>最后更新日期：2026年8月31日</p>
+<p>欢迎使用实用工具箱！在使用我们的服务之前，请仔细阅读以下使用条款。使用本网站即表示您同意遵守这些条款。如果您不同意这些条款，请不要使用本网站。</p>
 <h3>一、服务说明</h3>
-<p>实用工具箱是一个提供免费在线工具的网站，涵盖文本处理、计算转换、开发辅助、生活日常等多种实用工具。我们的目标是为用户提供简单、高效、安全的在线工具服务。</p>
+<p>实用工具箱是一个提供免费在线工具的网站，涵盖文本处理、计算转换、开发辅助、生活日常等多种实用工具。我们的目标是为用户提供简单、高效、安全的在线工具服务。所有工具均在浏览器端运行，不依赖后端服务器。</p>
 <h3>二、使用规范</h3>
 <p>在使用本网站时，您同意：</p>
 <ul>
@@ -147,27 +231,29 @@
 <li>不会尝试攻击、破坏或干扰本网站的正常运行。</li>
 <li>不会批量抓取、复制或盗用本网站的内容和代码。</li>
 <li>不会利用本网站的工具发送垃圾信息或进行恶意行为。</li>
+<li>不会使用自动化工具大量访问本网站，影响其他用户的正常使用。</li>
 </ul>
 <h3>三、知识产权</h3>
-<p>本网站的原创内容、设计、代码和工具功能均受知识产权法律保护。未经授权，不得复制、修改、分发或用于商业用途。您可以为个人学习目的参考和使用本网站的工具。</p>
+<p>本网站的原创内容、设计、代码和工具功能均受知识产权法律保护。未经授权，不得复制、修改、分发或用于商业用途。您可以为个人学习目的参考和使用本网站的工具。网站中使用的第三方库和资源遵循其各自的开源协议。</p>
 <h3>四、免责声明</h3>
 <p>本网站的工具按"现状"提供，我们不做任何明示或暗示的保证，包括但不限于：</p>
 <ul>
 <li>工具的准确性和完整性。</li>
 <li>服务的不间断性和及时性。</li>
 <li>工具结果适用于特定目的。</li>
+<li>工具不会出现错误或缺陷。</li>
 </ul>
-<p>对于因使用或无法使用本网站工具而造成的任何直接或间接损失，我们不承担责任。重要决策请务必核实工具输出结果。</p>
+<p>对于因使用或无法使用本网站工具而造成的任何直接或间接损失，我们不承担责任。重要决策（如财务计算、医疗数据等）请务必核实工具输出结果，不要仅依赖本网站的工具。</p>
 <h3>五、广告服务</h3>
-<p>本网站通过展示广告来维持运营。广告内容由第三方广告商（Google AdSense）提供，我们不对广告内容的准确性、合法性或质量负责。点击广告前请自行判断。</p>
+<p>本网站通过展示广告来维持运营。广告内容由第三方广告商（Google AdSense）提供，我们不对广告内容的准确性、合法性或质量负责。点击广告前请自行判断。我们会尽力控制广告质量，避免展示不当内容，但无法完全保证所有广告都符合您的期望。</p>
 <h3>六、服务变更</h3>
-<p>我们保留随时修改、暂停或终止部分或全部服务的权利，无需事先通知。我们会尽力保持服务的稳定性，但不保证服务永久可用。</p>
+<p>我们保留随时修改、暂停或终止部分或全部服务的权利，无需事先通知。我们会尽力保持服务的稳定性，但不保证服务永久可用。工具功能可能会随版本更新而变化，我们会尽量在更新说明中告知用户。</p>
 <h3>七、法律适用</h3>
 <p>本使用条款的解释和适用均以中华人民共和国法律为准。如发生争议，双方应友好协商解决；协商不成的，任何一方均可向有管辖权的人民法院提起诉讼。</p>
 <h3>八、条款更新</h3>
-<p>我们可能会不时更新本使用条款。更新后的条款将在本页面发布，继续使用本网站即表示您接受更新后的条款。</p>
+<p>我们可能会不时更新本使用条款。更新后的条款将在本页面发布，继续使用本网站即表示您接受更新后的条款。重大变更时我们会在网站显著位置通知。</p>
 <h3>九、联系我们</h3>
-<p>如果您对本使用条款有任何疑问，请通过网站反馈渠道与我们联系。</p>
+<p>如果您对本使用条款有任何疑问，请通过网站反馈渠道与我们联系。我们会在合理时间内回复您的咨询。</p>
 </div>
 </div>
 </section>
@@ -177,22 +263,22 @@
 <div class="footer-grid">
 <div>
 <div class="footer-logo">🧰 实用工具箱</div>
-<p>汇聚100+实用在线工具，全部免费使用，数据本地处理安全可靠。</p>
+<p>汇聚100+实用在线工具，全部免费使用，数据本地处理安全可靠。附详细使用教程和常见问题解答。</p>
 </div>
 <div>
-<h4>文本工具</h4>
-<ul><li><a href="#tools" data-tool="word-counter">字数统计</a></li><li><a href="#tools" data-tool="case-converter">大小写转换</a></li><li><a href="#tools" data-tool="base64">Base64编解码</a></li></ul>
+<h4>热门工具</h4>
+<ul><li><a href="#tools" data-tool="word-counter">字数统计</a></li><li><a href="#tools" data-tool="base64">Base64编解码</a></li><li><a href="#tools" data-tool="json-formatter">JSON格式化</a></li><li><a href="#tools" data-tool="bmi-calculator">BMI计算器</a></li></ul>
 </div>
 <div>
-<h4>计算工具</h4>
-<ul><li><a href="#tools" data-tool="calculator">计算器</a></li><li><a href="#tools" data-tool="bmi-calculator">BMI计算器</a></li><li><a href="#tools" data-tool="loan-calculator">贷款计算器</a></li></ul>
+<h4>教程指南</h4>
+<ul><li><a href="#blog" data-blog="text-tools-guide">文本工具教程</a></li><li><a href="#blog" data-blog="dev-tools-guide">开发工具教程</a></li><li><a href="#blog" data-blog="life-tools-guide">生活工具教程</a></li><li><a href="#blog" data-blog="privacy-security-guide">隐私安全指南</a></li></ul>
 </div>
 <div>
 <h4>关于</h4>
-<ul><li><a href="#about">关于我们</a></li><li><a href="#privacy">隐私政策</a></li><li><a href="#terms">使用条款</a></li></ul>
+<ul><li><a href="#about">关于我们</a></li><li><a href="#faq">常见问题</a></li><li><a href="#privacy">隐私政策</a></li><li><a href="#terms">使用条款</a></li></ul>
 </div>
 </div>
-<div class="footer-bottom">© 2026 实用工具箱 ToolBox. All rights reserved. | 100+ 免费在线工具</div>
+<div class="footer-bottom">© 2026 实用工具箱 ToolBox. All rights reserved. | 100+ 免费在线工具 | 数据本地处理，安全可靠</div>
 </div>
 </footer>
 <script src="tools_data.js"></script>
